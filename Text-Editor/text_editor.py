@@ -9,7 +9,8 @@ import tkFont
 root = Tk()
 root.geometry('700x450')
 root.title("Text Editor")
-root.iconbitmap("Icons/Text_Editor.ico")
+icon = PhotoImage(file = 'Icons/Editor_icon.gif')
+root.tk.call('wm', 'iconphoto', root._w, icon)
 global number
 number = 0
 Pmw.initialise()
